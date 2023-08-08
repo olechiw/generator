@@ -21,7 +21,7 @@ class RandomSelectionTree {
         NodePointer right;
     };
 public:
-    RandomSelectionTree() : root { nullptr }, rd{}, rng{rd()} {
+    RandomSelectionTree() noexcept : root { nullptr }, rd{}, rng{rd()} {
 
     }
 
